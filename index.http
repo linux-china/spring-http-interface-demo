@@ -1,0 +1,3 @@
+### GET My IP
+#@name my-ip
+GET http://localhost:8080/my-ip
