@@ -11,7 +11,7 @@ public class HttpBinClientTest {
 
     @BeforeAll
     public static void setUp() {
-        WebClient webClient = WebClient.builder().build();
+        WebClient webClient = WebClient.builder().baseUrl("https://httpbin.org").build();
         HttpServiceProxyFactory httpServiceProxyFactory = HttpServiceProxyFactory.builder().clientAdapter(WebClientAdapter.forClient(webClient)).build();
         httpBinClient = httpServiceProxyFactory.createClient(HttpBinClient.class);
     }
