@@ -1,0 +1,3 @@
+http.clients:
+  httpbin-client:
+    url: https://httpbin.org/
