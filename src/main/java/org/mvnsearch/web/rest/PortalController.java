@@ -1,5 +1,6 @@
-package org.mvnsearch;
+package org.mvnsearch.web.rest;
 
+import org.mvnsearch.service.HttpBinService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
