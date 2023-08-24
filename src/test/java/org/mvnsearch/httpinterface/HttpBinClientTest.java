@@ -12,13 +12,13 @@ public class HttpBinClientTest {
     @BeforeAll
     public static void setUp() {
         WebClient webClient = WebClient.builder().baseUrl("https://httpbin.org").build();
-        HttpServiceProxyFactory httpServiceProxyFactory = HttpServiceProxyFactory.builder().clientAdapter(WebClientAdapter.forClient(webClient)).build();
+        HttpServiceProxyFactory httpServiceProxyFactory = HttpServiceProxyFactory.builder().exchangeAdapter(WebClientAdapter.forClient(webClient)).build();
         httpBinClient = httpServiceProxyFactory.createClient(HttpBinClient.class);
     }
 
     @Test
     public void testClient() throws Exception {
-        System.out.println(httpBinClient.myIp().block().origin());
+        System.out.println(httpBinClient.myIp("dabc").block().origin());
     }
 
 }
