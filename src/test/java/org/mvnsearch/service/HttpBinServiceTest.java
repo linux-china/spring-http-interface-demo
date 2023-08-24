@@ -1,6 +1,7 @@
-package org.mvnsearch;
+package org.mvnsearch.service;
 
 import org.junit.jupiter.api.Test;
+import org.mvnsearch.SpringBootBaseTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import reactor.test.StepVerifier;
 
