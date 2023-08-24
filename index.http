@@ -1,3 +1,7 @@
 ### GET My IP
 #@name my-ip
 GET http://localhost:8080/my-ip
+
+### user detail
+#@name user-detail
+GET http://localhost:8080/user/linux_china
