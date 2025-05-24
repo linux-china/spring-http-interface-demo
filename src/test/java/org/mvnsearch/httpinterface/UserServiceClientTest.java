@@ -21,7 +21,7 @@ public class UserServiceClientTest {
     @BeforeAll
     public static void setUp() {
         WebClient webClient = WebClient.builder().baseUrl("http://localhost:8080").build();
-        HttpServiceProxyFactory httpServiceProxyFactory = HttpServiceProxyFactory.builder().exchangeAdapter(WebClientAdapter.forClient(webClient)).build();
+        HttpServiceProxyFactory httpServiceProxyFactory = HttpServiceProxyFactory.builder().exchangeAdapter(WebClientAdapter.create(webClient)).build();
         userHttpService = httpServiceProxyFactory.createClient(UserHttpService.class);
     }
 
