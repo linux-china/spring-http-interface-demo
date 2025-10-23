@@ -1,7 +1,6 @@
 package org.mvnsearch.service;
 
 import com.maciejwalkowiak.spring.http.annotation.HttpClient;
-import org.springframework.stereotype.Service;
 import org.springframework.web.service.annotation.GetExchange;
 import reactor.core.publisher.Mono;
 
